@@ -1,0 +1,6 @@
+{
+  "name": "My test storage app",
+  "identifier": "com.metrological.app.myteststorageapp",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}

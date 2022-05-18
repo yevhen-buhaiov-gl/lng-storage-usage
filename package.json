@@ -1,0 +1,17 @@
+{
+  "name": "my-lng-storage",
+  "description": "Lightning dynamic storage usage",
+  "dependencies": {
+    "@lightningjs/cli": "^2.4.0",
+    "@lightningjs/sdk": "^4.8.3",
+    "lng-storage": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0"
+  },
+  "scripts": {
+    "start": "lng dev"
+  }
+}
