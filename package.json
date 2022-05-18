@@ -4,7 +4,7 @@
   "dependencies": {
     "@lightningjs/cli": "^2.4.0",
     "@lightningjs/sdk": "^4.8.3",
-    "lng-storage": "^2.0.3"
+    "lng-storage": "^2.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
