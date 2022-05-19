@@ -15,7 +15,7 @@ export default class App extends Router.App {
         namespace: 'lng.main', // namespace for LocalStorage to split storage and exclude collisions
         defaultValues: [{ key: 'color', value: 0xff225cb3, external: true }], // default values object
       },
-    ])
+    ], true)
   }
 
   _setup() {
