@@ -1,5 +1,5 @@
 import { Lightning, Router } from '@lightningjs/sdk'
-import LDSP from 'lng-storage'
+import LS from 'lng-storage'
 
 export default class OtherRoute extends Lightning.Component {
   static _template() {
@@ -29,7 +29,7 @@ export default class OtherRoute extends Lightning.Component {
   }
 
   _handleUp() {
-    LDSP.set(
+    LS.set(
       'main',
       'color',
       Number(`0xff${((Math.random() * 0xffffff) << 0).toString(16).padStart(6, '0')}`),

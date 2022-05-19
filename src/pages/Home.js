@@ -1,5 +1,5 @@
 import { Lightning, Router } from '@lightningjs/sdk';
-import LDSP from 'lng-storage';
+import LS from 'lng-storage';
 
 export default class Home extends Lightning.Component {
     static _template() {
@@ -8,7 +8,7 @@ export default class Home extends Lightning.Component {
                 rect: true,
                 w: 1920,
                 h: 1080,
-                color: LDSP.get('main', 'color'),
+                color: LS.get('main', 'color'),
             },
             Text: {
                 mount: 0.5,
@@ -25,7 +25,7 @@ export default class Home extends Lightning.Component {
     }
 
     _setup() {
-        LDSP.addAction('main', 'color', this.id, this._setBackgroundColor);
+        LS.addAction('main', 'color', this.id, this._setBackgroundColor);
     }
 
     _handleRight() {

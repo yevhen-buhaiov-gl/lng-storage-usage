@@ -1,5 +1,5 @@
-import { Colors, Router, Utils } from '@lightningjs/sdk'
-import LDSP from 'lng-storage'
+import { Router, Utils } from '@lightningjs/sdk'
+import LS from 'lng-storage'
 import Home from './pages/Home'
 import OtherRoute from './pages/OtherRoute'
 
@@ -9,7 +9,7 @@ export default class App extends Router.App {
   }
 
   _construct() {
-    LDSP.init([
+    LS.init([
       {
         name: 'main', // Storage name
         namespace: 'lng.main', // namespace for LocalStorage to split storage and exclude collisions
