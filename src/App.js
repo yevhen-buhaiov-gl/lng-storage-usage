@@ -12,7 +12,6 @@ export default class App extends Router.App {
     LS.init([
       {
         name: 'main', // Storage name
-        namespace: 'lng.main', // namespace for LocalStorage to split storage and exclude collisions
         defaultValues: [{ key: 'color', value: 0xff225cb3, external: true }], // default values object
       },
     ], true)
